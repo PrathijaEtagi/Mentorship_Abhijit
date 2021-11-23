@@ -1,6 +1,6 @@
 *** Settings ***
 Library          SeleniumLibrary
-Resource        C:\\Users\\Admin\\Desktop\\Moolya Test\\BrowserKeywords.robot
+Resource        C:\\Users\\Admin\\Documents\\GitHub\\Mentorship_Abhijit\\BrowserKeywords.robot
 Suite Setup      Open Initial Browser
 Suite Teardown   Close All Browsers
 
@@ -29,6 +29,18 @@ Open Home Tab
 
     Click on Home Tab
     Check Home page is opened or not
+     
+    # What We love to do
+    
+    Click on Remote Teams That Works 
+    Click on Improve Coverage 
+    Click on Automate Right Things 
+    Click on Prevent Bugs
+    Click on Build Super Teams  
+    Click on This is Exciting Button
+    Go Back
+    
+
 
 #To Open Solution dropdown
 Open Solution Tab
@@ -39,6 +51,10 @@ Open Solution Tab
     Click on Moolya Power
     Verify Moolya Power Opened or not
     Selenium wait
+    # Solved through a passion for testing
+    Click on Test Ownership
+    Click on Test Leadership 
+    Click on Test Expertise   
     
     #To Open Moolya Startup Test LAB
     Click On Moolya Solution Tab
