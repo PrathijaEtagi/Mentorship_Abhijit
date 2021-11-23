@@ -1,6 +1,6 @@
 *** Settings ***
 Library          SeleniumLibrary
-Resource        C:\\Users\\Admin\\Documents\\GitHub\\Mentorship_Abhijit\\BrowserKeywords.robot
+Resource         C:\\Users\\Admin\\Documents\\GitHub\\Mentorship_Abhijit\\BrowserKeywords.robot
 Suite Setup      Open Initial Browser
 Suite Teardown   Close All Browsers
 
@@ -15,8 +15,8 @@ Suite Teardown   Close All Browsers
 
 #To Setup Window
 Browser Setup
-     Window Maximize 
-     Selenium wait 
+    Window Maximize 
+    Selenium wait 
 
 
 #To Verify Moolya Website is Opened or Not
@@ -29,18 +29,21 @@ Open Home Tab
 
     Click on Home Tab
     Check Home page is opened or not
-     
-    # What We love to do
     
+    # What We love to do
     Click on Remote Teams That Works 
     Click on Improve Coverage 
     Click on Automate Right Things 
     Click on Prevent Bugs
     Click on Build Super Teams  
+
+    #To go to Solution Page from home page
     Click on This is Exciting Button
     Go Back
-    
 
+    #To go to Leadership page from Home page 
+    Click on view more to navigate to Leadership page 
+    Go Back
 
 #To Open Solution dropdown
 Open Solution Tab
@@ -51,6 +54,7 @@ Open Solution Tab
     Click on Moolya Power
     Verify Moolya Power Opened or not
     Selenium wait
+
     # Solved through a passion for testing
     Click on Test Ownership
     Click on Test Leadership 
@@ -61,8 +65,14 @@ Open Solution Tab
     Selenium wait
     Click on Startup Test LAB 
     Verify Moolya Startup Test LAB Opened or not
+    
+    #Testing is our life. Not yours.
+    Click on Training Time 
+    Click on Hiring Time
+    Click on PO Time 
+    Click on CTO Time 
 
-
+    
 #To Open Product dropdown
 Open Product Tab
 
