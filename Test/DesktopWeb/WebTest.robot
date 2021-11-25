@@ -1,8 +1,7 @@
 *** Settings ***
 Documentation    Moolya Official Website Testing
 Library          SeleniumLibrary
-Resource         ../Resorces/moolyaKeywords.robot
-Resource         ../Resorces/moolyaCommonKeywords.robot
+Resource         Resource.robot
 # To Run This File Use "robot Test\Moolya.robot" Command
 Suite Setup      Open Initial Browser
 Suite Teardown   To Close Browser

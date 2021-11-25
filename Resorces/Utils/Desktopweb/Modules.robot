@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  moolyaVariables.robot
+Resource  C:\Users\Admin\Documents\GitHub\Mentorship_Abhijit\App Locators\WebLocators.robot
 
 
 *** Keywords ***
