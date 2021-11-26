@@ -1,3 +1,3 @@
 *** Settings ***
-Resource  C:\Users\Admin\Documents\GitHub\Mentorship_Abhijit\Resorces\Utils\Desktopweb\Modules.robot
-Resource  C:\Users\Admin\Documents\GitHub\Mentorship_Abhijit\Resorces\Utils\Desktopweb\Open&Close.robot
+Resource  ..\..\Resorces\Utils\Desktopweb\Modules.robot
+Resource  ..\..\Resorces\Utils\Desktopweb\Setup.robot

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Common Keywords
 Library  SeleniumLibrary
-Resource  C:\Users\Admin\Documents\GitHub\Mentorship_Abhijit\App Locators\WebLocators.robot
+Resource  ..\..\..\App Locators\WebLocators.robot
 
 
 *** Keywords ***
