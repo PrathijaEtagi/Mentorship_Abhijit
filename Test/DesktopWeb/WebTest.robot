@@ -2,7 +2,7 @@
 Documentation    Moolya Official Website Testing
 Library          SeleniumLibrary
 Resource         Resource.robot
-# To Run This File Use "robot Test\Moolya.robot" Command
+# To Run This File Use "robot Test\\DesktopWeb\\WebTest.robot" Command
 Suite Setup      Open Initial Browser
 Suite Teardown   To Close Browser
 

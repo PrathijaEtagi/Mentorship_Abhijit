@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ..\..\..\App Locators\WebLocators.robot
+Resource  ..\\..\\..\\App Locators\\WebLocators.robot
 
 
 *** Keywords ***
