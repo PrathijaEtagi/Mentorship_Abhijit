@@ -8,8 +8,9 @@ User Clicks On Start Saving Button
     Click Element At Coordinates    600    1700
 
 Verify Register Page Is Opened
-    Wait Until Element Is Visible  accessibility_id=Register
+    Wait Until Element Is Visible  ${register}
 
 Click On Text Field To Enter Valid Number
-    Click Element    class=android.widget.EditText
-    Input Text    class=android.widget.EditText   1234567891
+    Click Element  ${enterNumber}
+    Input Text  ${enterNumber}  1234567891
+    Sleep  5s
