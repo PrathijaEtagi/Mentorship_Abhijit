@@ -17,12 +17,17 @@ Click On We Should Talk
 
 User Clicks On What We Love To Do Tabs
     [Documentation]  User Should Be Able click on all tabs
+    Run Keyword And Ignore Error  Scroll Into
+    Sleep  2s
     Click Element  ${remoteTeamsThatWorks}
     Click Element  ${improveCoverage}
     Click Element  ${automateRightThings}
     Click Element  ${preventBugs}
     Click Element  ${buildSuperTeams}
-    Sleep    5s
+    Sleep  2s
+
+Scroll Into
+    Scroll Element Into View  ${remoteTeamsThatWorks}
 
 Click On Prevent Bugs
     Click Element  ${preventBugs}
@@ -36,12 +41,30 @@ Click On Improve Coverage
 Click On Remote Teams That Works
     Click Element  ${remoteTeamsThatWorks}
 
+Scroll Into This Is Exciting
+    Scroll Element Into View  ${thisIsExciting}
+
 User Clicks On This Is Exciting Button
+    Run Keyword And Ignore Error  Scroll Into This Is Exciting
     Click Element  ${thisIsExciting}
+    Sleep  2s
+
+Scroll Into View More
+    Scroll Element Into View  ${viewMore}
+    Sleep  5s
 
 User Clicks On View More To Navigate To Leadership Page
-    Click Element  ${viewMore}
-    Sleep    5s
+    Run Keyword And Ignore Error  Scroll Into View More
+    Click Button  ${viewMore}
+    Sleep  2s
+
+Scroll Into 10K Run Page
+    Scroll Element Into View  ${10kRun}
+
+User Clicks On Read More To Navigate To 10K Run Page
+    Run Keyword And Ignore Error  Scroll Into 10K Run Page
+    Click Element  ${10kRun}
+    Sleep  2s
 
 User Clicks On Moolya Solution Tab
     [Documentation]  User Should Be Able To Open Solution Tab
@@ -53,13 +76,19 @@ Clicks On Moolya Power
 Verifies Moolya Power Opened Or Not
     Page Should Contain Element  ${moolyaPowerTitle}
 
+Scroll Into Test Ownership
+    Scroll Element Into View   ${testOwnership}
+    Sleep  5s
+
 Click On Test Expertise
     Click Element  ${testExpertise}
+    Sleep  2s
 
 Click On Test Leadership
     Click Element  ${testLeadership}
 
 Click On Test Ownership
+    Run Keyword And Ignore Error  Scroll Into Test Ownership
     Click Element  ${testOwnership}
 
 Click On Startup Test LAB
@@ -67,6 +96,10 @@ Click On Startup Test LAB
 
 Verifies Moolya Startup Test LAB Opened Or Not
     Page Should Contain Element  ${startupTestLabText}
+
+Scroll Into Training Time
+    Scroll Element Into View  ${trainingTime}
+    Sleep  5s
 
 Click On CTO Time
     Click Element  ${ctoTime}
@@ -78,6 +111,7 @@ Click On Hiring Time
     Click Element  ${hiringTime}
 
 Click On Training Time
+    Run Keyword And Ignore Error  Scroll Into Training Time
     Click Element  ${trainingTime}
 
 User Clicks On Moolya Products Tab

@@ -24,6 +24,8 @@ User Should Be Able To Go To Another Page From Home Page
     [Tags]  Test03
     User Clicks On This Is Exciting Button
     Then Go Back
+    User Clicks On Read More To Navigate To 10K Run Page
+    Then Go Back
     User Clicks On View More To Navigate To Leadership Page
     Then Go Back
 
@@ -34,7 +36,6 @@ User Should Open Solution Tab Dropdown And Navigate To Power Page
     SeleniumWait
     And Clicks On Moolya Power
     Then Verifies Moolya Power Opened Or Not
-    SeleniumWait
 
 User Should Be Able To Click On Passion For Testing Tabs In Power Page
     [Documentation]  User Should Be Able To Click On Passion For Testing Tabs In Power Page
@@ -42,7 +43,7 @@ User Should Be Able To Click On Passion For Testing Tabs In Power Page
     Click On Test Ownership
     Click On Test Leadership
     Click On Test Expertise
-
+#
 User Should Open Solution Tab Dropdown And Navigate To Startup Test LAB Page
     [Documentation]  User Should Open Solution Tab Dropdown And Navigate To Startup Test LAB Page
     [Tags]  Test06

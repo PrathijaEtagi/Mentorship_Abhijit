@@ -19,7 +19,8 @@ ${automateRightThings}  xpath=//div[@id="v-pills-tab"]//a[@id="v-pills-automatio
 ${improveCoverage}  xpath=//div[@id="v-pills-tab"]//a[@id="v-pills-security-tab"]
 ${remoteTeamsThatWorks}  xpath=//div[@id="v-pills-tab"]//a[@id="v-pills-remote-teams-tab"]
 ${thisIsExciting}  xpath=//div[@id="v-pills-tab"]//button[@class="explore-solution-btn custom-btn"]
-${viewMore}  xpath=//div[@class="broadcast__view-more"]//input[@class="custom-btn "]
+${viewMore}  xpath=//input[@onclick="location.href='//moolya.com/leadership'"]
+${10kRun}  xpath=//a[@class="explore-solution-btn custom-btn"]
 # Solution Page
 ${moolyaSolution}  id=moolyaSolution
 # Solution page Moolya Power
