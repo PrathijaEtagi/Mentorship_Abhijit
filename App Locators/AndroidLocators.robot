@@ -32,7 +32,7 @@ ${odiaLanguage}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.Line
 ${startSaving}  xpath=//android.view.View[@text="Start Saving"]
 ${register}  accessibility_id=Register
 ${enterNumber}  class=android.widget.EditText
-${number}  1234566666
+${number}  1234567777
 ${continue}  accessibility_id=Continue
 ${OTPSent}   accessibility_id=Please enter OTP sent to + 91 ${number}
 ${enterOTPHere}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[5]
