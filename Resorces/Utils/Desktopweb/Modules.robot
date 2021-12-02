@@ -17,7 +17,7 @@ Click On We Should Talk
 
 User Clicks On What We Love To Do Tabs
     [Documentation]  User Should Be Able click on all tabs
-    Run Keyword And Ignore Error  Scroll Into
+    Run Keyword And Ignore Error  Scroll Into Remote Teams Works
     Sleep  2s
     Click Element  ${remoteTeamsThatWorks}
     Click Element  ${improveCoverage}
@@ -26,7 +26,7 @@ User Clicks On What We Love To Do Tabs
     Click Element  ${buildSuperTeams}
     Sleep  2s
 
-Scroll Into
+Scroll Into Remote Teams Works
     Scroll Element Into View  ${remoteTeamsThatWorks}
 
 Click On Prevent Bugs
@@ -51,10 +51,13 @@ User Clicks On This Is Exciting Button
 
 Scroll Into View More
     Scroll Element Into View  ${viewMore}
-    Sleep  5s
+    Sleep  2s
 
 User Clicks On View More To Navigate To Leadership Page
     Run Keyword And Ignore Error  Scroll Into View More
+    User Clicks On View More
+
+User Clicks On View More
     Click Button  ${viewMore}
     Sleep  2s
 
@@ -77,8 +80,15 @@ Verifies Moolya Power Opened Or Not
     Page Should Contain Element  ${moolyaPowerTitle}
 
 Scroll Into Test Ownership
-    Scroll Element Into View   ${testOwnership}
-    Sleep  5s
+    Scroll Element Into View  ${testOwnership}
+    Sleep  2s
+
+User Clicks On Solved Through A Passion For Testing
+    Run Keyword And Ignore Error  Scroll Into Test Ownership
+    Sleep  2s
+    Click On Test Ownership
+    Click On Test Leadership
+    Click On Test Expertise
 
 Click On Test Expertise
     Click Element  ${testExpertise}
@@ -88,8 +98,7 @@ Click On Test Leadership
     Click Element  ${testLeadership}
 
 Click On Test Ownership
-    Run Keyword And Ignore Error  Scroll Into Test Ownership
-    Click Element  ${testOwnership}
+    Click Button  ${testOwnership}
 
 Click On Startup Test LAB
     Click Element  ${startupTestLab}
@@ -99,7 +108,15 @@ Verifies Moolya Startup Test LAB Opened Or Not
 
 Scroll Into Training Time
     Scroll Element Into View  ${trainingTime}
-    Sleep  5s
+    Sleep  2s
+
+User Clicks On Testing Is Our Life Not Yours
+    Run Keyword And Ignore Error  Scroll Into Training Time
+    Sleep  2s
+    Click On Training Time
+    Click On Hiring Time
+    Click On PO Time
+    Click On CTO Time
 
 Click On CTO Time
     Click Element  ${ctoTime}
@@ -111,7 +128,6 @@ Click On Hiring Time
     Click Element  ${hiringTime}
 
 Click On Training Time
-    Run Keyword And Ignore Error  Scroll Into Training Time
     Click Element  ${trainingTime}
 
 User Clicks On Moolya Products Tab

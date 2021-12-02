@@ -23,10 +23,20 @@ Verify OTP Page Opened Or Not
     Wait Until Page Contains Element  ${OTPSent}
 
 User Enters Recieved OTP
-    Click Element  ${enterOTPHere}
-    Sleep  2s
-    Input Text  ${enterOTPHere}  1234
-    Sleep  2s
+    Click Element At Coordinates    160    1160
+    Sleep  5s
+    Click Element At Coordinates    138    1198
+    Sleep    5s
+    Click Element At Coordinates    138    1198
+    Sleep    5s
+    Click Element At Coordinates    138    1198
+    Sleep    5s
+    Click Element At Coordinates    138    1198
+    Sleep    5s
+    #Click Element  ${enterOTPHere}
+    #Sleep  2s
+    #Input Text  ${enterOTPHere}  1234
+    #Sleep  2s
 
 Swipe Down In Terms And Condition Page
     Swipe By Percent    42    85    42    10
