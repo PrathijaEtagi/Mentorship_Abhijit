@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation    Siply Mobile App testing
-Library          AppiumLibrary
+Documentation  Siply Mobile App testing Locators
+Library  AppiumLibrary
 
 
 *** Variables ***
-#Desired Capabilities
+# Desired Capabilities
 ${server}  http://localhost:4723/wd/hub
 ${app package}  in.siply.ionic
 ${app activity}  com.capitalquotient.siplyv2.MainActivity
@@ -12,7 +12,7 @@ ${appium}  appium
 ${platform}  Android
 ${platform version}  8.1.0
 ${device}  ZY32283DJV
-
+# Language Section
 ${siplyLogo}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ImageView[1]
 ${language}   xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.widget.ImageView[2]
 ${closeLanguage}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View[1]/android.view.View/android.view.View[2]
