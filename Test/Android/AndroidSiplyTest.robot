@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation  Siply Mobile App testing
 Library  AppiumLibrary
-Resource  Resource.robot
-# robot Test\Android\AndroidTest.robot
+Resource  SiplyResource.robot
+# robot Test\Android\AndroidSiplyTest.robot
 Suite Setup  Open Siply Application On Real Device
 Suite Teardown  Close Siply Application
 
@@ -61,15 +61,6 @@ User Fills Recieved OTP
     [Tags]  Test08
     [Documentation]  User Enters Recieved OTP
     User Enters Recieved OTP
-    #Swipe By Percent    41    2.5    50    78
-    #Sleep  5s
-    #Click Element At Coordinates    312    925
-    #Swipe By Percent    42    75    50    20
-    #Click Element At Coordinates    190    1200
-    #Press Keycode  279
-    #Sleep  5s
-    #Long Press To Paste
-    #Click Element    accessibility_id=Paste
 
 User Clicks On Terms And Conditions Tag
     [Tags]  Test09

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Siply Mobile App testing Keywords
 Library  AppiumLibrary
-Resource  ..\\..\\..\\App Locators\\AndroidLocators.robot
+Resource  ..\\..\\..\\App Locators\\AndroidSiplyLocators.robot
 
 
 *** Keywords ***
@@ -27,9 +27,6 @@ User Enters Recieved OTP
     Sleep  2s
     Input Text  ${enterOTPHere}  1234
     Sleep  2s
-
-Long Press To Paste
-    Long Press  ${enterOTPHere}
 
 Swipe Down In Terms And Condition Page
     Swipe By Percent    42    85    42    10
