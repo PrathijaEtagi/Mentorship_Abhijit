@@ -10,4 +10,4 @@ User Allows Picture And Audio Record
     Click Element  ${allow}
     Sleep  2s
     Click Element  ${allow}
-    Sleep  15s
+    Sleep  20s
