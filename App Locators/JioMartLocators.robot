@@ -12,7 +12,7 @@ ${appium}  appium
 ${platform}  Android
 ${platform version}  8.1.0
 ${device}  ZY32283DJV
-
+# Login
 ${allow}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.Button[2]
 ${jioLogo}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]
 ${webviewContext}  WEBVIEW_com.fynd.jiomart.debug
@@ -21,10 +21,10 @@ ${number}  0760000257
 ${password}  xpath=//input[@type="password"]
 ${passwordCredential}  ABCjio@1
 ${login}  xpath=//input[@type="submit"]
-
+# Logout
 ${sideMenu}  xpath=//img[@class="mobile-only icon"]
 ${logout}  Xpath=//div[text()="Logout"]
-
+# Cart
 ${mobile&tablets}  xpath=//a[@class="gallery-link"][2]
 ${smartPhones}  xpath=//div[text()=" Smartphones "]
 ${viewAll}  xpath=//a[@href="/collection/smartphone"]
