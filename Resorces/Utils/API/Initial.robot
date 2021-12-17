@@ -4,7 +4,6 @@ Library  RequestsLibrary
 Library  JSONLibrary
 Library    String
 Library    Collections
-Library    XML
 Resource  ..\\..\\..\\App Locators\\APIvariables.robot
 
 
@@ -17,6 +16,9 @@ Status Code Should Be 200
 
 Status Code Should Be 201
     Status Should Be    ${created}
+
+Status Code Should Be 204
+    Status Should Be    ${noContent}
 
 Send Get Request For Initial Information
     ${response1}  Get  ${base_url}
@@ -56,13 +58,44 @@ To Register New APL Client
     Set Global Variable  ${username}
     ${body}  Create Dictionary  clientName=Abhijith  clientEmail=${username}@gmail.com
     ${header}  Create Dictionary  Content-Type=application/json
-    ${response6}    Post Request   MySession  ${apiClients}    data=${body}    headers=${header}
-    #${accessTokenJson}  Convert String To Json  ${response6.content}
-    #${accessToken}  Get value from JSON  ${accessTokenJson}   $.accessToken
-    #Set Global Variable  ${accessToken}
-    ${accessToken}  evaluate  $response6.json().get("accessToken")
-    Log to Console  ${accessToken}
+    ${response6}    Post Request    MySession  ${apiClients}    data=${body}    headers=${header}
+    ${accessToken}  Evaluate  $response6.json().get("accessToken")
+    Log To Console  ${accessToken}
     Set Global Variable  ${accessToken}
-    #Convert Json To String    ${accessToken}
-    #Convert To List  ${accessToken}
-    #Log To Console    ${accessToken}
+
+To Add AccessToken To header
+    ${orderHeader}  Create Dictionary  Authorization=${accessToken}  Content-Type=application/json
+    Set Global Variable    ${orderHeader}
+
+To Order In Stock Non Fiction Book
+    ${orderBody}  Create Dictionary  bookId=${bookID}  customerName=${username}
+    To Add AccessToken To header
+    ${response7}    Post Request    MySession    ${orders}    data=${orderBody}    headers=${orderHeader}
+    Log To Console   ${response7.content}
+    ${orderId}  Evaluate  $response7.json().get("orderId")
+    Log To Console  ${orderId}
+    Set Global Variable  ${orderId}
+
+To Get All Ordered Books
+    ${response8}  Get On Session  MySession    ${orders}    headers=${orderHeader}
+    Log To Console    ${response8.content}
+
+To Get An Order Using OrderId
+    ${response9}  Get On Session  MySession  ${orders}  params=orderid=${orderId}    headers=${orderHeader}
+    Log To Console    ${response9.content}
+   
+To Change The Name Of Customer In An Order
+    ${newBody}  Create Dictionary    customerName=${newUserName}
+    Patch On Session    MySession  ${orders}    params=orderid=${orderId}    json=${newBody}    headers=${orderHeader}
+
+To Verify Whether Customer Name Changed
+    ${response10}  Get On Session  MySession  ${orders}  params=orderid=${orderId}    headers=${orderHeader}
+    Log To Console    ${response10.content}
+    ${response10Json}  Convert String To Json  ${response10.content}
+    ${newName}  Get value from JSON  ${response10Json}   $[0].customerName
+    Log To Console  ${newName}
+    Should Be Equal    ${newUserName}    ${newName}
+
+To Delete Order
+    ${resp}    Delete On Session    MySession  ${orders}  headers=${orderHeader}  params=orderid=${orderId}
+    Log To Console    ${resp.content}

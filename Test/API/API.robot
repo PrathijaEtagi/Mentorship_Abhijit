@@ -8,6 +8,7 @@ Resource  Resource.robot
 Task Setup  Create Sessions
 
 
+
 *** Test Cases ***
 Initial Get Information
     Send Get Request For Initial Information
@@ -32,3 +33,27 @@ To Get Single Book From List
 To Register To API Clients
    To Register New APL Client
    Status Code Should Be 201
+
+To Order A Book
+    To Order In Stock Non Fiction Book
+    Status Code Should Be 201
+
+To Get The List Of Ordered Books
+    To Get All Ordered Books
+    Status Code Should Be 200
+
+To Get An Single Order
+    To Get An Order Using OrderId
+    Status Code Should Be 200
+
+To Update Customer Name In Order
+    To Change The Name Of Customer In An Order
+    Status Code Should Be 204
+
+To Check Whether Name Changed Or Not
+    To Verify Whether Customer Name Changed
+    Status Code Should Be 200
+
+To Delete The Order
+    To Delete Order
+    Status Code Should Be 204

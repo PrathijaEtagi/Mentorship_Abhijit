@@ -11,3 +11,6 @@ ${books}  /books
 ${nonFiction}  type=non-fiction
 ${apiClients}  /api-clients
 ${created}  201
+${orders}  /orders
+${newUserName}  Abhijith
+${noContent}  204
