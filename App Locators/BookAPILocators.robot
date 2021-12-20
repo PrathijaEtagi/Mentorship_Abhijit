@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  API Testing
+Documentation  API Testing Locators
 Library  RequestsLibrary
 
 
