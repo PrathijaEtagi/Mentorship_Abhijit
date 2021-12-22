@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation  JioMart Mobile App testing
 Library  AppiumLibrary
-Resource  JioMartResource.robot
-# robot Test\Android\JioMartTest.robot
+Resource  Import.robot
+# To Run This Test Use "robot Test/Android/JioMart/JioMartTest.robot" Command
 Suite Setup  Open JioMart Application On Real Device
 Suite Teardown  Close JioMart Apllication
 

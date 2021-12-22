@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation    Moolya Official Website Testing
-Library          SeleniumLibrary
-Resource         Resource.robot
-# To Run This File Use "robot Test\\DesktopWeb\\WebTest.robot" Command
-Suite Setup      Open Initial Browser
-Suite Teardown   To Close Browser
+Documentation  Moolya Official Website Testing
+Library  SeleniumLibrary
+Resource  Import.robot
+# To Run This Test Use "robot Test/DesktopWeb/WebTest.robot" Command
+Suite Setup  Open Initial Browser
+Suite Teardown  To Close Browser
 
 
 *** Test Cases ***
@@ -20,13 +20,9 @@ User Clicks On What We Love To Do Tabs Present In Home Page
     When User Clicks On What We Love To Do Tabs
 
 User Should Be Able To Go To Another Page From Home Page
-    [Documentation]  User should be able  go to Solution Page and Leadership page  from home page
+    [Documentation]  User should be able  go to Solution Page from home page
     [Tags]  Test03
     User Clicks On This Is Exciting Button
-    Then Go Back
-    User Clicks On Read More To Navigate To 10K Run Page
-    Then Go Back
-    User Clicks On View More To Navigate To Leadership Page
     Then Go Back
 
 User Should Open Solution Tab Dropdown And Navigate To Power Page

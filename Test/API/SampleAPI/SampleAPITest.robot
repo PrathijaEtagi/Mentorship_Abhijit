@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation  API Testing
 Library  RequestsLibrary
-Resource  SampleAPIResource.robot
+Resource  Import.robot
 
 Task Setup  Create New Sessions
-# robot Test\API\SampleAPITest.robot
+# To Run This Test Use Command- robot Test/API/SampleAPI/SampleAPITest.robot
 
 
 *** Test Cases ***

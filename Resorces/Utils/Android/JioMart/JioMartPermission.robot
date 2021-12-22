@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  JioMart Mobile App Testing Allowing Permission
 Library  AppiumLibrary
-Resource  ..\\..\\..\\App Locators\\JioMartLocators.robot
+Resource  ../../../../App Locators/Android/JioMart/JioMartLocators.robot
 
 
 *** Keywords ***

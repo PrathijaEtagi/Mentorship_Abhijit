@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation  API Testing
 Library  RequestsLibrary
-Resource  BookApiResource.robot
+Resource  Import.robot
 
 Task Setup  Create Sessions
-# robot Test\API\BookAPITest.robot
+# To Run This Test Use Command- robot Test/API/BookAPI/BookAPITest.robot
 
 
 *** Test Cases ***

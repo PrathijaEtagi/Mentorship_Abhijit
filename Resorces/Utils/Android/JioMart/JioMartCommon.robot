@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  JioMart Mobile App Testing Login And Logout
 Library  AppiumLibrary
-Resource  ..\\..\\..\\App Locators\\JioMartLocators.robot
+Resource  ../../../../App Locators/Android/JioMart/JioMartLocators.robot
 
 
 *** Keywords ***

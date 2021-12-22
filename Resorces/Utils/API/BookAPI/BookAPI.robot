@@ -4,7 +4,7 @@ Library  String
 Library  Collections
 Library  RequestsLibrary
 Library  JSONLibrary
-Resource  ..\\..\\..\\App Locators\\BookAPILocators.robot
+Resource  ../../../../App Locators/API/BookAPI/BookAPILocators.robot
 
 
 *** Keywords ***

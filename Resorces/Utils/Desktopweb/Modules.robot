@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ..\\..\\..\\App Locators\\WebLocators.robot
+Resource  ../../../App Locators/Desktopweb/WebLocators.robot
 
 
 *** Keywords ***
@@ -89,6 +89,7 @@ Click On Test Leadership
 
 Click On Test Ownership
     Run Keyword And Ignore Error  Scroll Into Test Ownership
+    Sleep  5s
     Click Element  ${testOwnership}
 
 Click On Startup Test LAB
@@ -112,6 +113,7 @@ Click On Hiring Time
 
 Click On Training Time
     Run Keyword And Ignore Error  Scroll Into Training Time
+    Sleep  5s
     Click Element  ${trainingTime}
 
 User Clicks On Moolya Products Tab

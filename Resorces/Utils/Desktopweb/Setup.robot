@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Common Keywords
 Library  SeleniumLibrary
-Resource  ..\\..\\..\\App Locators\\WebLocators.robot
+Resource  ../../../App Locators/Desktopweb/WebLocators.robot
 
 
 *** Keywords ***

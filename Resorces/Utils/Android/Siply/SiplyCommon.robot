@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Siply Mobile App testing Keywords
 Library  AppiumLibrary
-Resource  ..\\..\\..\\App Locators\\AndroidSiplyLocators.robot
+Resource  ../../../../App Locators/Android/Siply/SiplyLocators.robot
 
 
 *** Keywords ***

@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation  Siply Mobile App testing
 Library  AppiumLibrary
-Resource  SiplyResource.robot
-# robot Test\Android\AndroidSiplyTest.robot
+Resource  Import.robot
+# To Run This Test Use "robot Test/Android/Siply/SiplyTest.robot" Command
 Suite Setup  Open Siply Application On Real Device
 Suite Teardown  Close Siply Application
 
