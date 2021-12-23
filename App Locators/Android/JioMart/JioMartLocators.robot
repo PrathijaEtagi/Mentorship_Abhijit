@@ -13,8 +13,8 @@ ${platform}  Android
 ${platform version}  8.1.0
 ${device}  ZY32283DJV
 # Login
-${allow}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.Button[2]
-${jioLogo}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]
+${allow}  xpath=*//android.widget.LinearLayout[2]/android.widget.Button[2]
+${jioLogo}  xpath=*//android.webkit.WebView/android.view.View/android.view.View[1]
 ${webviewContext}  WEBVIEW_com.fynd.jiomart.debug
 ${userName}  xpath=//input[@type="text"]
 ${number}  0760000257
@@ -35,8 +35,5 @@ ${okPincode}  xpath=//img[@src="https://hdn-1.jiox0.de/jiox0/company/1/applicati
 ${pincode}  400001
 ${buyNow}  xpath=//div[@class="action-btns-pdp"]//div[text()=" Buy Now "]
 ${home}  xpath=//div[text()="Home"]
-${NeditPincode}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[1]/android.view.View/android.widget.Image[2]
-${NtextPincode}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[1]/android.view.View/android.view.View[6]/android.view.View/android.view.View/android.widget.EditText
-${NokPincode}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[1]/android.view.View/android.view.View[6]/android.view.View/android.view.View/android.widget.Image
 ${search}  xpath=//div[text()="Search"]
 ${searchContainer}  xpath=//div[@class="search-container"]
