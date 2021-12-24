@@ -1,0 +1,2 @@
+robotframework                    4.1.2
+robotframework-appiumlibrary      1.6.3
